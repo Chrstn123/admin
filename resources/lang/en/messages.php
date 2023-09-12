@@ -1537,4 +1537,10 @@
   'successfully review submitted!' => 'Successfully review submitted!',
   'Order deliveryman added!' => 'Order deliveryman added!',
   'Message updated!' => 'Message updated!',
+  'Queueing' => 'Queueing',
+  'product inventory' => 'Product inventory',
+  'Inventories' => 'Inventories',
+  'Tea2go' => 'Tea2go',
+  'Queueing Order List' => 'Queueing Order List',
+  'stocks' => 'Stocks',
 );

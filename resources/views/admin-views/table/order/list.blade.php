@@ -1,6 +1,6 @@
 @extends('layouts.admin.app')
 
-@section('title', translate('Table Order List'))
+@section('title', translate('Queueing Order List'))
 
 @push('css_or_js')
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="row align-items-center mb-3">
             <div class="col-9">
-                <h1 class=" text-capitalize">{{translate('Table')}} {{translate('orders')}} <span class="badge badge-soft-dark ml-2">{{ $orders->total() }}</span></h1>
+                <h1 class=" text-capitalize">{{translate('Queueing')}} {{translate('orders')}} <span class="badge badge-soft-dark ml-2">{{ $orders->total() }}</span></h1>
             </div>
 
             <div class="col-3">

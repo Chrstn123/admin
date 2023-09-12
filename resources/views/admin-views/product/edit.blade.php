@@ -83,7 +83,16 @@
                     @endif
                     <div id="from_part_2">
                         <div class="row">
-                            <div class="col-md-4 col-6">
+                            <div class="col-md-2 col-6">
+                                <div class="form-group">
+                                    <label class="input-label" for="exampleFormControlInput1">{{translate('stocks')}}</label>
+                                    <input type="number" value="{{$product['stocks']}}" min="0" name="stocks"
+                                           class="form-control" step="1"
+                                           placeholder="{{translate('Ex : 100')}}" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 col-6">
                                 <div class="form-group">
                                     <label class="input-label" for="exampleFormControlInput1">{{translate('price')}}</label>
                                     <input type="number" value="{{$product['price']}}" min="0" name="price"

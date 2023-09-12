@@ -221,6 +221,7 @@ class ProductController extends Controller
         //combinations end
         $product->variations = json_encode($variations);
         $product->price = $request->price;
+        $product->stocks = $request->stocks;
         $product->set_menu = $request->item_type;
         $product->product_type = $request->product_type;
         $product->image = Helpers::upload('product/', 'png', $request->file('image'));
@@ -379,6 +380,7 @@ class ProductController extends Controller
         //combinations end
         $product->variations = json_encode($variations);
         $product->price = $request->price;
+        $product->stocks = $request->stocks;
         $product->set_menu = $request->item_type;
         $product->product_type = $request->product_type;
         $product->image = $request->has('image') ? Helpers::update('product/', $product->image, 'png', $request->file('image')) : $product->image;

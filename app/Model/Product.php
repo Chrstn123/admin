@@ -12,6 +12,7 @@ class Product extends Model
     protected $casts = [
         'tax' => 'float',
         'price' => 'float',
+        'stocks' => 'integer',
         'status' => 'integer',
         'discount' => 'float',
         'set_menu' => 'integer',

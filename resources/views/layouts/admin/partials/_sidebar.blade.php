@@ -1,6 +1,6 @@
 <div id="sidebarMain" class="d-none">
     <aside
-        class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered  ">
+        class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered  bg-green">
         <div class="navbar-vertical-container text-capitalize">
             <div class="navbar-vertical-footer-offset">
                 <div class="navbar-brand-wrapper justify-content-between">
@@ -28,7 +28,7 @@
                 </div>
 
                 <!-- Content -->
-                <div class="navbar-vertical-content">
+                <div class="navbar-vertical-content tea2go-navbar">
                     <ul class="navbar-nav navbar-nav-lg nav-tabs">
 
                         <!-- Dashboards -->
@@ -251,7 +251,7 @@
                             <li class="nav-item">
                                 <small
                                     class="nav-subtitle">
-                                    {{translate('table')}} {{translate('order')}} {{translate('section')}}
+                                    {{translate('Queueing')}} {{translate('order')}} {{translate('section')}}
                                 </small>
                                 <small class="tio-more-horizontal nav-subtitle-replacer"></small>
                             </li>
@@ -259,11 +259,11 @@
                             <li class="navbar-vertical-aside-has-menu {{Request::is('admin/table/order/list/*')?'active':''}}">
                                 <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
                                    href="javascript:">
-                                    <i class="tio-shopping-cart nav-icon"></i>
+                                    <i class="tio-history nav-icon"></i>
                                     <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
-                                        {{translate('table order')}}
+                                        {{translate('Queueing')}}
                                     </span>
-                                    <label class="badge badge-danger">{{translate('addon')}}</label>
+                                    <label class="badge badge-info">{{translate('new')}}</label>
                                 </a>
                                 <ul class="js-navbar-vertical-aside-submenu nav nav-sub"
                                     style="display: {{Request::is('admin/table/order*')?'block':'none'}}">
@@ -441,9 +441,10 @@
                                     </li>
                                     <li class="nav-item {{Request::is('admin/product/list')?'active':''}}">
                                         <a class="nav-link " href="{{route('admin.product.list')}}"
-                                           title="{{translate('product list')}}">
+                                           title="{{translate('product inventory')}}">
                                             <span class="tio-circle nav-indicator-icon"></span>
-                                            <span class="text-truncate">{{translate('list')}}</span>
+                                            <span class="text-truncate">{{translate('Inventories')}}</span>
+                                            <label class="badge badge-info">{{translate('new')}}</label>
                                         </a>
                                     </li>
                                     <li class="nav-item {{Request::is('admin/product/bulk-import')?'active':''}}">

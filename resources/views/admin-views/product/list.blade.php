@@ -58,6 +58,7 @@
                                 <th style="width: 25%">{{translate('image')}}</th>
                                 <th>{{translate('status')}}</th>
                                 <th>{{translate('price')}}</th>
+                                <th>{{translate('stocks')}}</th>
                                 <th>{{translate('action')}}</th>
                             </tr>
                             </thead>
@@ -96,6 +97,7 @@
                                         @endif
                                     </td>
                                     <td>{{ \App\CentralLogics\Helpers::set_symbol($product['price']) }}</td>
+                                    <td>{{ $product['stocks'] }}</td>
                                     <td>
                                         <!-- Dropdown -->
                                         <div class="dropdown">
